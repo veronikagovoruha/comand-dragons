@@ -1,0 +1,41 @@
+// Background-Color
+$heroBgColor: #ffb8ca;
+$primaryBgColor: #e5e5e5;
+$secondaryBgColor: #fff5f6;
+$modalBgColor: #e17992;
+$modalBgMainColor: #e18298;
+$headerBgMainColor: #ffb8caca;
+
+// Background-Color-Button
+$primaryBgButton: #ffffff;
+$secondaryBgButton: #ecebeb;
+$accentBgButton: #c7133e;
+
+// Background-Color-Products
+$primaryBgProducts: #ffb8ca;
+$secondBgProducts: #f0d1a5;
+$thirdBgProducts: #c2e297;
+
+// Background-Svg
+$accentBgSvg: #d31342;
+$svgBg: #fea5bb;
+
+// Color
+$accentColor: #d41443;
+
+$mainTitleColor: #d41443;
+$secondaryTitleColor: #ffa5ba;
+
+$whiteTextColor: #ffffff;
+$blackTextColor: #000000;
+$mainTextColor: #907e82;
+
+$main-font: DM Sans, sans-serif;
+$support-font: Titan One, sans-serif;
+
+//Анимация//
+$timeDelay: 250ms;
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+html {
+  scroll-behavior: smooth;
+}

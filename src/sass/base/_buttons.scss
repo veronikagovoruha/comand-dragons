@@ -1,0 +1,39 @@
+.btn {
+  padding: 9px 14px;
+
+  border-radius: 20px;
+
+  min-width: 63px;
+
+  @include fonts(normal, 400, 8px, 10px);
+
+  @include mq(tablet) {
+    padding: 11px 14px;
+  }
+
+  @include mq(desktop) {
+    min-width: 104px;
+
+    @include fonts(normal, 400, 14px, 18px);
+  }
+}
+.btn--dark {
+  background-color: $accentColor;
+  color: white;
+
+  transition: background-color $timeDelay $cubic, color $timeDelay $cubic;
+  &:hover,
+  &:focus {
+    background-color: $accentBgButton;
+  }
+}
+.btn--light {
+  background-color: white;
+  color: $accentColor;
+
+  &:hover,
+  &:focus {
+    background-color: $secondaryBgButton;
+    color: $accentBgButton;
+  }
+}

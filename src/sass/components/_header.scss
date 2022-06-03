@@ -1,0 +1,113 @@
+.header { 
+    width: 100%;
+    position: fixed;
+    background-color: transparent;
+    padding-top: 6px;
+    transition: all .3s ease-out;
+
+    @media (min-width:768px) {
+            padding: 20px 0;
+            &.fixed {
+                background-color: $headerBgMainColor;
+            }
+    }
+    @media (min-width:1280px) {
+        
+        //background-color: $headerBgMainColor;
+        // padding: 37px 0;
+    }
+    .container {
+        width: 100%;
+    }
+    z-index: 999; 
+}
+.header__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+.header__btn {
+    display: none;
+    transition: $cubic $timeDelay;
+    &:hover,
+    &:focus {
+        background-color: $secondaryBgButton;
+    }
+    @include mq(tablet) {
+        display: flex;
+
+        margin-left: 30px;
+        font-family: $main-font;
+        @include fonts(normal, 700, 16px, 21px, null);
+    
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    
+        color: $accentColor;
+
+        width: 160px;
+        height: 44px;
+
+        padding-left: 37px;
+        padding-right: 37px;
+
+
+        background: $whiteTextColor;
+        border: transparent;
+        border-radius: 22px;
+    }
+}
+
+.header__nav {
+    display: none;
+    @include mq(desktop) {
+        display: flex;
+    }
+}
+.modal-toggle__open {
+
+    display: flex;
+    margin-left: auto;
+    justify-content: space-between;
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    @media (min-width:1280px) {
+    display: none;
+    }
+    
+}
+.header__nav-list {
+    display: flex;
+}
+.header__nav-item:not(:first-child){
+    margin-left: 35px;
+}
+.header__nav-item {
+    @include fonts(normal,700,16px,21px,0.04em);
+    color: $whiteTextColor;
+    .link {
+        transition: $cubic $timeDelay;
+        &:hover,
+        &:focus {
+            color: $accentColor;
+        }
+    } 
+}   
+
+
+.overlay-block {
+    position: fixed;
+    z-index: 9998;
+    background-color: rgba(0,0,0,.75);
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    &.open {
+        display: block;
+    }
+}

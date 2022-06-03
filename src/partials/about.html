@@ -1,0 +1,110 @@
+<section class="section section__about" id="about">
+  <div class="container-about container">
+    <p class="section-about__text">tradition and love</p>
+    <h2 class="section-about__title" id="how">how it's made?</h2>
+    <div class="about__content">
+      <picture class="about__image">
+        <source
+          srcset="
+            ./images/about/img-4/img-4-desk-1x.webp 1x,
+            ./images/about/img-4/img-4-desk-2x.webp 2x
+          "
+          media="(min-width:1280px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/about/img-4/img-4-desk-1x.png 1x,
+            ./images/about/img-4/img-4-desk-2x.png 2x
+          "
+          media="(min-width:1280px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/about/img-4/img-4-tabl-1x.webp 1x,
+            ./images/about/img-4/img-4-tabl-2x.webp 2x
+          "
+          media="(min-width:768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/about/img-4/img-4-tabl-1x.png 1x,
+            ./images/about/img-4/img-4-tabl-2x.png 2x
+          "
+          media="(min-width:768px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/about/img-4/img-4-mobile-1x.webp 1x,
+            ./images/about/img-4/img-4-mobile-2x.webp 2x
+          "
+          media="(max-width:767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/about/img-4/img-4-mobile-1x.png 1x,
+            ./images/about/img-4/img-4-mobile-2x.png 2x
+          "
+          media="(max-width:767px)"
+          type="image/png"
+        />
+        <img src="./images/about/img-4/img-4-mobile-1x.png" alt="Cow" />
+      </picture>
+      <div class="about__wraptext">
+        <p class="about__text about__text--main">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+        </p>
+        <p class="about__text about__text--sub">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus. Cras massa nibh, tincidunt.
+        </p>
+        <p class="about__text about__text--sub">Aliquam erat volutpat. Aenean accumsan.</p>
+        <div class="about__wrapper">
+          <button class="about__btn" type="button" data-modal-open>
+            <svg class="about__icon" width="4.5" height="8">
+              <use href="./images/sprite.svg#icon-vector-btn"></use>
+            </svg>
+            Read more
+          </button>
+
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="modal__button" data-modal-close>
+                <svg class="modal__icon" width="14" height="14">
+                  <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+              <div class="form">
+                <h2 class="form__title">How is milk made?</h2>
+                <p class="form__text form__text--main">
+                  Cows are milked using vacuum cups which are attached to the cow's teats. The milk
+                  is sent through stainless steel pipes to large refrigerated vats, then stored at
+                  5°C or less. Within 48 hours, milk is taken in tankers to a milk factory where
+                  it's pasteurised and homogenised.
+                </p>
+                <p class="form__text">
+                  Milk is put under pressure through fine nozzles, which evenly disperses fat
+                  globules. This stops the cream separating and rising to the top, allowing a more
+                  consistent texture and taste. Some manufacturers produce unhomogenised milk for
+                  people who prefer the cream to separate and rise to the top of the bottle.
+                </p>
+                <p class="form__text">
+                  Today's farm technology, cattle management and factory methods allow for greater
+                  consistency of milk, and milk composition can be adjusted for year-round
+                  consistency. Milk composition is standardised so elements like fat content are
+                  made consistent no matter the season or breed of cow the milk comes from.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
